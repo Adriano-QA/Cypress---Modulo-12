@@ -1,0 +1,31 @@
+[
+    {
+        "nome": "Adriano",
+        "sobrenome": "Teste",
+        "empresa": "EBAC",
+        "endereco": "Avenida Paulista",
+        "numero": "2022",
+        "pais": "Brasil",
+        "cidade": "Bauru",
+        "estado": "São Paulo",
+        "cep": "13530000",
+        "telefone": "88888888888",
+        "email": "adriano@teste.com.br"
+    },
+
+    {
+        "nome": "Carlos",
+        "sobrenome": "Teste",
+        "empresa": "Teste",
+        "endereco": "Avenida Teste",
+        "numero": "22",
+        "pais": "Brasil",
+        "cidade": "Jáu",
+        "estado": "São Paulo",
+        "cep": "13530000",
+        "telefone": "6784957634",
+        "email": "carlos@teste.com.br"
+    }
+
+
+]
