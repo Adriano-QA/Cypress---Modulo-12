@@ -17,18 +17,8 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
     });
 
     it('Deve fazer um pedido na loja Ebac Shop de ponta a ponta', () => {
-
-        var quantidade = 3
         cy.visit('produtos/')
-        cy.get('[class="product-block grid"]')
-            .contains('Argus All-Weather Tank')
-            .click()
-        cy.get('.button-variable-item-S').click()
-        cy.get(':nth-child(2) > .value > .variable-items-wrapper > .variable-item').click()
-        cy.get('.input-text').clear().type(quantidade)
-        cy.get('.single_add_to_cart_button').click()
-        cy.get('.dropdown-toggle > .mini-cart-items').should('contain', quantidade)
-        cy.get('.woocommerce-message').should('contain', quantidade + ' × “Argus All-Weather Tank” foram adicionados no seu carrinho.')
+        cy.addProdutos('Argus All-Weather Tank', 'M', 'Gray', 3)
         cy.get('.woocommerce-message > .button').click()
         cy.get('.checkout-button').click()
         cy.get('.woocommerce-info > .showlogin').click()
